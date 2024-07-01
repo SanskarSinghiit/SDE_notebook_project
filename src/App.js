@@ -43,7 +43,7 @@ function App() {
   };
 
   useEffect(() => {
-    localStorage.setItem("notes-app", JSON.stringify(notes));
+    localStorage.setItem("notes-app", JSON.stringify(notes));  // Local storage in browsers can only store strings.
   }, [notes]);
 
   return (
